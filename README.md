@@ -35,6 +35,14 @@ docker images cities-app
 ```
 helm install cities-app cities-app/
 ```
+5] Run command to view the pods
+```
+kubectl get pods
+```
+6] Run command to view the service
+```
+kubectl get service
+```
 
 # Test the application and its endpoints to make sure it works as expected.
 i) Health endpoint:
