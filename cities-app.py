@@ -6,11 +6,10 @@ app = Flask(__name__)
 
 #constants that store the password for the Elasticsearch instance and the URL for the Elasticsearch endpoint.
 ELASTIC_PASSWORD = "<password>"
-CLOUD_ID = "http://<ElaticSearch_Endpoint>:9200"
 
 #creates an Elasticsearch client instance and sets the authentication credentials and endpoint URL.
 es = Elasticsearch(
-    cloud_id=CLOUD_ID,
+    "http://<ElaticSearch_Endpoint>:9200",
     basic_auth=("elastic", ELASTIC_PASSWORD)
 )
 
