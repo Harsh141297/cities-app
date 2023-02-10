@@ -47,7 +47,7 @@ kubectl get service
 # Test the application and its endpoints to make sure it works as expected.
 i) Health endpoint:
 ```
-curl http://<service-url>:<port>/health
+curl http://<service-url>:<port>/
 ```
 ii) Insert/update city endpoint:
 ```
